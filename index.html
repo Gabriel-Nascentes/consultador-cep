@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+  </head>
+  <body style="background-color: #212529;">
+    <main class="container" >
+      <nav class="navbar navbar-light bg-dark" style="margin-top: 80px;">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white">Consulte seu CEP:</a>
+          <form class="d-flex ">
+            <input
+              id="cep"
+              class="form-control me-2"
+              type="search"
+              placeholder="00000-000"
+            />
+            <button
+              class="btn btn-outline-success my-2 my-sm-2"
+              type="button"
+              onclick="consultaCep()"
+            >
+              Buscar
+            </button>
+          </form>
+        </div>
+      </nav>
+      <table class="table container text-white table-cep" style="margin-top:20px; width: 80%;">
+          <tr >
+            <th scope="col">CEP:</th>
+            <th scope="col" class="cep"></p></th>
+          </tr>
+          <tr>
+            <th scope="row">Logradouro:</th>
+            <td class="logradouro"></td>
+          </tr>
+          <tr>
+            <th scope="row">Bairro:</th>
+            <td class="bairro"></td>
+          </tr>
+          <tr>
+            <th scope="row">Localidade:</th>
+            <td class="localidade"></td>
+          </tr>
+          <tr>
+            <th scope="row">UF:</th>
+            <td class="uf"></td>
+          </tr>
+      </table>
+    </main>
+  </body>
+  <script src="/js/jquery-3.6.0.min.js"></script>
+  <script src="/js/main.js"></script>
+</html>
